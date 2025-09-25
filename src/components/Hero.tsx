@@ -4,7 +4,7 @@ import { ImageWithFallback } from "./figma/ImageWithFallback";
 
 export function Hero() {
   return (
-    <section id="home" className="relative py-20 lg:py-32 overflow-hidden">
+    <section id="home" className="relative py-20 lg:py-32 overflow-hidden bg-gradient-to-br from-background via-background to-primary/5">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="lg:grid lg:grid-cols-12 lg:gap-x-8 lg:gap-y-20">
           <div className="relative z-10 mx-auto max-w-2xl lg:col-span-7 lg:max-w-none lg:pt-6 xl:col-span-6">
@@ -28,13 +28,13 @@ export function Hero() {
               </Button>
             </div>
             <div className="mt-12 flex items-center space-x-8">
-              <div className="flex items-center space-x-2">
+              <div className="flex items-center space-x-2 p-3 bg-primary/10 rounded-lg">
                 <Bot className="h-6 w-6 text-primary" />
-                <span className="text-sm text-muted-foreground">Custom AI Agents</span>
+                <span className="text-sm font-medium text-foreground">Custom AI Agents</span>
               </div>
-              <div className="flex items-center space-x-2">
+              <div className="flex items-center space-x-2 p-3 bg-primary/10 rounded-lg">
                 <Zap className="h-6 w-6 text-primary" />
-                <span className="text-sm text-muted-foreground">IoT Solutions</span>
+                <span className="text-sm font-medium text-foreground">IoT Solutions</span>
               </div>
             </div>
           </div>

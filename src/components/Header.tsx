@@ -1,6 +1,8 @@
 import { Button } from "./ui/button";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
+import { Logo } from "./Logo";
+import { ThemeToggle } from "./ThemeToggle";
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -11,7 +13,7 @@ export function Header() {
         <div className="flex h-16 items-center justify-between">
           <div className="flex items-center">
             <div className="flex-shrink-0">
-              <h1 className="text-2xl font-bold text-primary">TechnoBazics</h1>
+              <Logo size="sm" />
             </div>
           </div>
           
@@ -32,7 +34,8 @@ export function Header() {
             </div>
           </nav>
 
-          <div className="hidden md:block">
+          <div className="hidden md:flex md:items-center md:space-x-4">
+            <ThemeToggle />
             <Button>Get Started</Button>
           </div>
 
@@ -61,7 +64,10 @@ export function Header() {
               <a href="#contact" className="text-foreground hover:text-primary block px-3 py-2 rounded-md transition-colors">
                 Contact
               </a>
-              <div className="pt-2">
+              <div className="pt-2 space-y-2">
+                <div className="flex justify-center">
+                  <ThemeToggle />
+                </div>
                 <Button className="w-full">Get Started</Button>
               </div>
             </div>

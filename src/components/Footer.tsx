@@ -1,5 +1,6 @@
 import { Separator } from "./ui/separator";
 import { Mail, Phone, MapPin, Linkedin, Twitter, Github } from "lucide-react";
+import { Logo } from "./Logo";
 
 export function Footer() {
   const services = [
@@ -30,7 +31,9 @@ export function Footer() {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
           <div className="lg:col-span-1">
-            <h3 className="text-2xl font-bold text-primary mb-4">TechnoBazics</h3>
+            <div className="mb-4">
+              <Logo size="md" showIcon={false} />
+            </div>
             <p className="text-muted-foreground mb-6">
               Building tomorrow's AI solutions today. We specialize in custom AI agents 
               and IoT solutions that transform businesses.
